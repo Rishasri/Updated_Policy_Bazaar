@@ -15,7 +15,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
-public class BaseClass {
+
+//Author: Rishasri, Sri Devi
+//Date of creation: 28/04/2024
+//Date of updation: 03/05/2024
+
+public class baseclass {
 		 static WebDriver driver;		
 		  @BeforeClass
 		  @Parameters({"url","browser"})

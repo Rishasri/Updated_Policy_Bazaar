@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>java</name>
-			<type>2</type>
-			<location>C:/Users/2303843/eclipse-workspace/UpdatedPolicyBazaar/src/test/java</location>
-		</link>
-	</linkedResources>
 </projectDescription>

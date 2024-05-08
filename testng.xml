@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="utilities.Extentreports"/>  
+<listener class-name="utilities.Extentreport"/>  
 </listeners>
 	
   <test name="Test">
@@ -10,7 +10,7 @@
   <parameter name="browser" value="chrome"/>
  
     <classes>
-      <class name="TestCases.Tests"/>
+      <class name="TestCases.tests"/>
     </classes>
     
   </test> <!-- Test -->

@@ -12,10 +12,16 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
- 
-import TestCases.Tests;
-public class Extentreports implements ITestListener{
+import com.aventstack.extentreports.reporter.configuration.Theme; 
+import TestCases.tests;
+
+
+//Author: Rishasri, Sri Devi
+//Date of creation: 02/05/2024
+//Date of updation: 03/05/2024
+
+
+public class Extentreport implements ITestListener{
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -42,7 +48,7 @@ public class Extentreports implements ITestListener{
 //		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
 		try {
-			String imgPath = Tests.captureScreen(result.getName());
+			String imgPath = tests.captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (IOException e1) {
 			e1.printStackTrace();
@@ -54,7 +60,7 @@ public class Extentreports implements ITestListener{
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		try {
-			String imgPath = Tests.captureScreen(result.getName());
+			String imgPath = tests.captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (IOException e1) {
 			e1.printStackTrace();

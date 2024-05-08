@@ -16,18 +16,24 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-public class TravelInsurancePOM {
-
+public class TravelInsurance {
+// Author: Sri Devi
+// Date of creation: 23/04/2024
+//Date of updation: 03/05/2024
 	WebDriver driver;
 	JavascriptExecutor js;
 
-	public TravelInsurancePOM(WebDriver driver)
+	public TravelInsurance(WebDriver driver)
 	{
 		this.driver=driver;
 		js=(JavascriptExecutor)driver;
 		PageFactory.initElements(driver,this);
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="(//div[@class='shadowHandlerBox'])[7]//ancestor::a")
 	WebElement travelInsurance;
 	public void clickTravelInsurance() throws InterruptedException
@@ -42,6 +48,10 @@ public class TravelInsurancePOM {
 		System.out.println("Navigated to Destination" );
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//*[@id=\"input-row\"]")
 	WebElement Destination;
 	public void clickDestination()
@@ -49,14 +59,9 @@ public class TravelInsurancePOM {
 		js.executeScript("arguments[0].click();", Destination);
 	}
 
-//	@FindBy(xpath="//input[@id='country']")
-//	WebElement country;
-//	public void sndCountry()
-//	{
-//		Actions act=new Actions(driver);
-//		act.sendKeys("United");
-//		
-//	}
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
 
 	@FindBy(xpath="//*[text()=\"United Kingdom\"]")
 	WebElement UK;
@@ -68,6 +73,10 @@ public class TravelInsurancePOM {
 		System.out.println("Destination Validated Successfully:" + ExpectedResult);
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//*[text()='Next']")
 	WebElement next;
 	public void clickNext() throws InterruptedException
@@ -80,6 +89,10 @@ public class TravelInsurancePOM {
 		System.out.println("Navigated to DatePage");
 	}
  
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="(//*[contains(@class,\"MuiInputBase-input\")])[1]")
 	WebElement SDate;
 	public void clickDate()
@@ -87,6 +100,10 @@ public class TravelInsurancePOM {
 		SDate.click();
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//button[@class=\"MuiButtonBase-root MuiPickersDay-root MuiPickersDateRangeDay-day MuiPickersDateRangeDay-notSelectedDate MuiPickersDateRangeDay-dayOutsideRangeInterval\"]")
 	List<WebElement> dates;
 	public void selectDates()
@@ -110,6 +127,10 @@ public class TravelInsurancePOM {
 		}
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//button[@class=\"travel_main_cta\"]")
 	WebElement next2;
 	public void clickNext2()
@@ -120,12 +141,20 @@ public class TravelInsurancePOM {
 		System.out.println("Navigated to Travellers page");
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//*[@id='traveller_2']")
 	WebElement select_no_passengers;
 	public void clickNoOfPersons()
 	{
 		js.executeScript("arguments[0].click()",select_no_passengers);
 	}
+	
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
 	
 	@FindBy(xpath="//*[@id='divarrow_undefined'][1]")
 	WebElement drop_1;
@@ -134,6 +163,10 @@ public class TravelInsurancePOM {
 		drop_1.click();
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(id="22 years_undefined")
 	WebElement age_22;
 	public void selectAge_22() throws InterruptedException
@@ -149,6 +182,10 @@ public class TravelInsurancePOM {
 		System.out.println("Age1 Validated:" + ExpectedResult1);
 	}
  
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="(//*[@id='divarrow_undefined'])[2]")
 	WebElement drop_2;
 	public void clickdrop_2()
@@ -156,6 +193,10 @@ public class TravelInsurancePOM {
 		drop_2.click();
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(id="21 years_undefined")
 	WebElement age_21;
 	public void selectAge_21()
@@ -168,6 +209,10 @@ public class TravelInsurancePOM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//button[@class=\"travel_main_cta\"]")
 	WebElement next3;
 	public void clickNext3()
@@ -178,6 +223,10 @@ public class TravelInsurancePOM {
 		System.out.println("Navigated to MedicalHistory Page");
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//input[@id=\"ped_yes\"]")
 	WebElement yes;
 	public void click_yes() throws InterruptedException
@@ -190,6 +239,10 @@ public class TravelInsurancePOM {
 		System.out.println("RadioButton Validated");
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//input[@id=\"ped_yes_traveller_0\"]")
 	WebElement CheckBox1;
 
@@ -198,6 +251,10 @@ public class TravelInsurancePOM {
 		Assert.assertTrue(CheckBox1.isSelected());
 		System.out.println("Checkbox1 Validated");
 	}
+	
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
 
 	@FindBy(xpath="//input[@id=\"ped_yes_traveller_1\"]")
 	WebElement CheckBox2;
@@ -207,6 +264,10 @@ public class TravelInsurancePOM {
 		System.out.println("Checkbox2 Validated");
 	}
 
+	// Author: Sri Devi
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+	
 	@FindBy(xpath="//button[@class=\"travel_main_cta\"]")
 	WebElement next4;
 	public void clickNext4() throws InterruptedException
@@ -218,6 +279,10 @@ public class TravelInsurancePOM {
 		Thread.sleep(2000);
 		next4.click();
 	}
+	
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
 
 	@FindBy(xpath="(//*[@id='mobileNumber'])")
 	WebElement mob;
@@ -225,6 +290,10 @@ public class TravelInsurancePOM {
 	{
 		mob.click();
 	}
+	
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
 
 	public void enter_mobNo()
 	{
@@ -234,6 +303,10 @@ public class TravelInsurancePOM {
 		System.out.println("Mobile Number Entered");
 	}
 
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
+	
 	@FindBy(xpath="//*[text()='View plans']")
 	WebElement view_plan;
 	public void click_view_plan() throws InterruptedException
@@ -246,6 +319,10 @@ public class TravelInsurancePOM {
 		System.out.println("Navigated to Plans page");
 	}
 
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
+	
 	@FindBy(xpath="//input[@id=\"multiTrip\"]")
 	WebElement plans;
 	public void plans() 
@@ -254,6 +331,10 @@ public class TravelInsurancePOM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
+	
 	@FindBy(xpath="//input[@id=\"30_days\"]")
 	WebElement days;
 	public void days() throws InterruptedException {
@@ -266,6 +347,10 @@ public class TravelInsurancePOM {
 		//Thread.sleep(4000);
 	}
 
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
+	
 	@FindBy(xpath="//div[@class=\"pqCtaWrapper\"]")
 	WebElement apply;
 	public void apply() throws InterruptedException 
@@ -280,6 +365,10 @@ public class TravelInsurancePOM {
 		System.out.println("RadioButton Validated");
 	}
 
+	// Author: Rishasri
+	// Date of creation: 27/04/2024
+	//Date of updation: 30/04/2024
+	
 	@FindBy(xpath="//*[@id=\"root\"]/div/div[2]/aside/section[1]/details/summary")
 	WebElement sort_by;
 	public void select_low_to_high() throws InterruptedException
@@ -295,6 +384,10 @@ public class TravelInsurancePOM {
 		
 	}
 
+	// Author: Rishasri
+	// Date of creation: 30/04/2024
+	//Date of updation: 02/05/2024
+	
 	@FindBy(xpath="//p[@class=\"quotesCard--insurerName\"]")
 	List<WebElement>companyname;
 	public void companiesName()
@@ -305,6 +398,10 @@ public class TravelInsurancePOM {
 		}
 	}
 
+	// Author: Rishasri
+	// Date of creation: 30/04/2024
+	//Date of updation: 02/05/2024
+	
 	@FindBy(xpath="//span[@class=\"premiumPlanPrice\"]")
 	List<WebElement>prices;
 	public void prices() {

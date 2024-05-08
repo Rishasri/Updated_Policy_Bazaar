@@ -2,15 +2,12 @@
 <testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-08T10:21:34 IST" name="Suite" finished-at="2024-05-08T10:22:52 IST" duration-ms="78398">
+  <suite started-at="2024-05-08T12:28:40 IST" name="Suite" finished-at="2024-05-08T12:29:11 IST" duration-ms="30925">
     <groups>
-      <group name="regression Test One">
-        <method signature="Tests.lowest_prices_of_three_insurances()[pri:8, instance:TestCases.Tests@4b013c76]" name="lowest_prices_of_three_insurances" class="TestCases.Tests"/>
-      </group> <!-- regression Test One -->
     </groups>
-    <test started-at="2024-05-08T10:21:34 IST" name="Test" finished-at="2024-05-08T10:22:52 IST" duration-ms="78398">
-      <class name="TestCases.Tests">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:34 IST" name="beforeClass" finished-at="2024-05-08T10:21:41 IST" duration-ms="6856" status="PASS">
+    <test started-at="2024-05-08T12:28:40 IST" name="Test" finished-at="2024-05-08T12:29:11 IST" duration-ms="30925">
+      <class name="TestCases.tests">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:40 IST" name="beforeClass" finished-at="2024-05-08T12:28:46 IST" duration-ms="5705" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,63 +23,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="open_travel_insurance()[pri:1, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:41 IST" name="open_travel_insurance" finished-at="2024-05-08T10:21:44 IST" duration-ms="3014" status="PASS">
+        <test-method signature="open_travel_insurance()[pri:1, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:46 IST" name="open_travel_insurance" finished-at="2024-05-08T12:28:48 IST" duration-ms="1948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open_travel_insurance -->
-        <test-method signature="select_destination()[pri:2, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:44 IST" name="select_destination" finished-at="2024-05-08T10:21:45 IST" duration-ms="537" status="PASS">
+        <test-method signature="select_destination()[pri:2, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:48 IST" name="select_destination" finished-at="2024-05-08T12:28:48 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- select_destination -->
-        <test-method signature="click_Date()[pri:3, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:45 IST" name="click_Date" finished-at="2024-05-08T10:21:46 IST" duration-ms="996" status="PASS">
+        <test-method signature="click_Date()[pri:3, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:49 IST" name="click_Date" finished-at="2024-05-08T12:28:49 IST" duration-ms="860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_Date -->
-        <test-method signature="click_No_of_persons()[pri:4, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:46 IST" name="click_No_of_persons" finished-at="2024-05-08T10:21:56 IST" duration-ms="9090" status="PASS">
+        <test-method signature="click_No_of_persons()[pri:4, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:50 IST" name="click_No_of_persons" finished-at="2024-05-08T12:28:50 IST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- click_No_of_persons -->
-        <test-method signature="MedicalHistory()[pri:5, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:56 IST" name="MedicalHistory" finished-at="2024-05-08T10:21:58 IST" duration-ms="2698" status="PASS">
+        <test-method signature="MedicalHistory()[pri:5, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:50 IST" name="MedicalHistory" finished-at="2024-05-08T12:28:53 IST" duration-ms="2383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MedicalHistory -->
-        <test-method signature="enter_mob_no()[pri:6, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:21:59 IST" name="enter_mob_no" finished-at="2024-05-08T10:22:23 IST" duration-ms="24715" status="PASS">
+        <test-method signature="enter_mob_no()[pri:6, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:53 IST" name="enter_mob_no" finished-at="2024-05-08T12:28:55 IST" duration-ms="2271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enter_mob_no -->
-        <test-method signature="Viewplan()[pri:7, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:24 IST" name="Viewplan" finished-at="2024-05-08T10:22:30 IST" duration-ms="6501" status="PASS">
+        <test-method signature="Viewplan()[pri:7, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:28:55 IST" name="Viewplan" finished-at="2024-05-08T12:29:02 IST" duration-ms="6363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Viewplan -->
-        <test-method signature="lowest_prices_of_three_insurances()[pri:8, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:30 IST" name="lowest_prices_of_three_insurances" finished-at="2024-05-08T10:22:31 IST" duration-ms="306" status="PASS">
+        <test-method signature="lowest_prices_of_three_insurances()[pri:8, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:02 IST" name="lowest_prices_of_three_insurances" finished-at="2024-05-08T12:29:02 IST" duration-ms="201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lowest_prices_of_three_insurances -->
-        <test-method signature="print_First_Three_companies()[pri:9, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:31 IST" name="print_First_Three_companies" finished-at="2024-05-08T10:22:31 IST" duration-ms="194" status="PASS">
+        <test-method signature="print_First_Three_companies()[pri:9, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:02 IST" name="print_First_Three_companies" finished-at="2024-05-08T12:29:03 IST" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- print_First_Three_companies -->
-        <test-method signature="go_To_Home_Page()[pri:10, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:31 IST" name="go_To_Home_Page" finished-at="2024-05-08T10:22:43 IST" duration-ms="11531" status="PASS">
+        <test-method signature="go_To_Home_Page()[pri:10, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:03 IST" name="go_To_Home_Page" finished-at="2024-05-08T12:29:04 IST" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- go_To_Home_Page -->
-        <test-method signature="carInsurance()[pri:11, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:43 IST" name="carInsurance" finished-at="2024-05-08T10:22:47 IST" duration-ms="3921" status="PASS">
+        <test-method signature="carInsurance()[pri:11, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:04 IST" name="carInsurance" finished-at="2024-05-08T12:29:06 IST" duration-ms="2166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- carInsurance -->
-        <test-method signature="cardetails()[pri:12, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:47 IST" name="cardetails" finished-at="2024-05-08T10:22:50 IST" duration-ms="3203" status="PASS">
+        <test-method signature="cardetails()[pri:12, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:06 IST" name="cardetails" finished-at="2024-05-08T12:29:09 IST" duration-ms="2789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cardetails -->
-        <test-method signature="InputValues()[pri:13, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:50 IST" name="InputValues" finished-at="2024-05-08T10:22:51 IST" duration-ms="560" status="PASS">
+        <test-method signature="InputValues()[pri:13, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:09 IST" name="InputValues" finished-at="2024-05-08T12:29:09 IST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InputValues -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCases.Tests@4b013c76]" started-at="2024-05-08T10:22:51 IST" name="afterClass" finished-at="2024-05-08T10:22:52 IST" duration-ms="1215" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestCases.tests@4b013c76]" started-at="2024-05-08T12:29:10 IST" name="afterClass" finished-at="2024-05-08T12:29:11 IST" duration-ms="1133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- TestCases.Tests -->
+      </class> <!-- TestCases.tests -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

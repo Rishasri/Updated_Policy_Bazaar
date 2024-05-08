@@ -14,17 +14,26 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
-public class CarInsurancePOM {
+public class CarInsurance {
 	
 	WebDriver driver;
 	JavascriptExecutor js;
 	
-	public CarInsurancePOM(WebDriver driver)
+	// Author: Rishasri
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
+	public CarInsurance(WebDriver driver)
 	{
 		this.driver=driver;
 		js=(JavascriptExecutor)driver;
 		PageFactory.initElements(driver,this);
 	}
+	
+	// Author: Rishasri
+		// Date of creation: 23/04/2024
+		//Date of updation: 26/04/2024
+		
 	
 	@FindBy(xpath="//*[text()=\"Policybazaar\"]")
 	WebElement go_To_home;
@@ -34,6 +43,10 @@ public class CarInsurancePOM {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	}
 
+	// Author: Rishasri
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+	
     @FindBy(xpath="//i[@class=\"arrow\"]")
     WebElement InsuranceProduct;
     public void insuranceproduct() 
@@ -41,6 +54,10 @@ public class CarInsurancePOM {
     	InsuranceProduct.click();
     }
 
+	// Author: Rishasri
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//a[text()=\"Car Insurance\"]")
     WebElement CarInsurance;
     public void carinsurance()
@@ -51,6 +68,10 @@ public class CarInsurancePOM {
 		System.out.println("Navigated Successfully");
     }
 
+	// Author: Rishasri
+	// Date of creation: 23/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//span[text()=\"car? Click here\"]")
     WebElement clickhere;
     public void Clickhere() 
@@ -62,7 +83,11 @@ public class CarInsurancePOM {
 		System.out.println("Navigated to Citypage");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
-
+    
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//div[text()=\"Chennai \"]")
     WebElement city;
     public void city() throws InterruptedException 
@@ -76,6 +101,10 @@ public class CarInsurancePOM {
 		System.out.println("Selected City");
     }
 
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//label[@data-id=\"903\"]")
     WebElement rto;
     public void rto() throws InterruptedException 
@@ -89,6 +118,10 @@ public class CarInsurancePOM {
 		System.out.println("Selected RTO");
     }
 
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="(//label[@data-id=\"33\"])[1]")
     WebElement brand;
     public void brand()  
@@ -96,6 +129,10 @@ public class CarInsurancePOM {
     	brand.click();
     }
 
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//label[@data-id=\"222\"]")
     WebElement model;
     public void model()
@@ -106,6 +143,10 @@ public class CarInsurancePOM {
 		System.out.println("Selected Model");
     }
 
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//span[text()=\"Petrol\"]")
     WebElement Fuel;
     public void Fuel() throws InterruptedException 
@@ -113,6 +154,10 @@ public class CarInsurancePOM {
     	Fuel.click();
     }
 
+	// Author: Rishasri
+	// Date of creation: 24/04/2024
+	//Date of updation: 26/04/2024
+    
     @FindBy(xpath="//span[text()=\"Delta AMT\"][@class=\"text\"]")
     WebElement variant;
     public void variant() throws InterruptedException 
@@ -121,6 +166,10 @@ public class CarInsurancePOM {
 		variant.click();
     }
 
+	// Author: Sri Devi
+	// Date of creation: 27/04/2024
+	//Date of updation: 03/05/2024
+    
     @FindBy(xpath="//input[@id =\"txtName\"]")
     WebElement name;
     public void name() 
@@ -132,6 +181,10 @@ public class CarInsurancePOM {
 		System.out.println("Error Message:Please enter character only");
     }
 
+	// Author: Sri Devi
+	// Date of creation: 27/04/2024
+	//Date of updation: 03/05/2024
+    
     @FindBy(xpath="//input[@id =\"txtEmail\"]")
     WebElement email;
     public void email() 
@@ -144,6 +197,10 @@ public class CarInsurancePOM {
 		System.out.println("Error Message:Please enter valid email address");
     }
 
+	// Author: Sri Devi
+	// Date of creation: 27/04/2024
+	//Date of updation: 03/05/2024
+    
     @FindBy(xpath="//input[@type=\"tel\"]")
     WebElement Mobilenum;
     public void mobnum() 
@@ -155,6 +212,10 @@ public class CarInsurancePOM {
 		System.out.println("Error Message:Please enter mobile number");
     }
 
+	// Author: Sri Devi
+	// Date of creation: 27/04/2024
+	//Date of updation: 03/05/2024
+    
     @FindBy(xpath="//div[@class=\"button btnOrange\"][text()=\"View Prices \"]")
     WebElement viewprice;
     public void viewprice() 
