@@ -111,7 +111,7 @@ public class TravelInsurance {
 		for(WebElement ele: dates)
 		{
 			String val=ele.getText();
-			if(val.equalsIgnoreCase("10"))
+			if(val.equalsIgnoreCase("15"))
 			{
 				Assert.assertTrue(ele.isEnabled());
 				System.out.println("StartDate Element is clickable");
@@ -307,7 +307,7 @@ public class TravelInsurance {
 	// Date of creation: 27/04/2024
 	//Date of updation: 30/04/2024
 	
-	@FindBy(xpath="//*[text()='View plans']")
+	@FindBy(xpath="//div[@class=\"pqCtaWrapper\"]")
 	WebElement view_plan;
 	public void click_view_plan() throws InterruptedException
 	{

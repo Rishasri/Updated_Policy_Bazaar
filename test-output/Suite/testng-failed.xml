@@ -10,19 +10,12 @@
     <classes>
       <class name="TestCases.tests">
         <methods>
-          <include name="click_Date"/>
-          <include name="cardetails"/>
           <include name="InputValues"/>
+          <include name="cardetails"/>
           <include name="carInsurance"/>
-          <include name="lowest_prices_of_three_insurances"/>
-          <include name="select_destination"/>
-          <include name="open_travel_insurance"/>
           <include name="afterClass"/>
-          <include name="print_First_Three_companies"/>
-          <include name="click_No_of_persons"/>
-          <include name="go_To_Home_Page"/>
-          <include name="MedicalHistory"/>
           <include name="beforeClass"/>
+          <include name="lowest_prices_of_three_insurances"/>
           <include name="enter_mob_no"/>
           <include name="Viewplan"/>
         </methods>
